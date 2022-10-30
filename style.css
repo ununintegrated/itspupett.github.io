@@ -1,36 +1,55 @@
-html {
-    height: 100%;
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/Roboto/Roboto-Regular.ttf);
 }
+
 body {
     margin: 0;
-    background-image: linear-gradient(-45deg,#888, #fff);
-    color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    font-family: 'Roboto';
+    font-size: 10vh;
 }
-.intro h1 {
-    font-size: 500%;
-    margin: 0;
-    font-weight: normal;
-}
-.intro p {
-    font-size: 120%;
-    margin: 0 30%;
-}
-.intro a {
+p {
     color: #222;
-}
-.contacts {
+    margin: 0;
     display: flex;
-    margin: 5% 30%;
+    flex-direction: column;
+    align-items: center;
 }
-.contacts img {
-    height: clamp(10px, 50px, 50px);
-    margin: 10px;
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 5vh;
 }
-.contacts a {
-    flex: 1;
+
+/* HEADER */
+header {
+    background: linear-gradient(315deg, #ce93d8, #ffe082);
 }
-.quote {
-    font-size: 20px;
+#memoji {
+    height: 50vh;
+    display: block;
+    margin: 5vh;
+}
+#brighter-text {
+    background: linear-gradient(315deg, #4884EE, #06BCFB);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* MAIN */
+main {
+    background: #eee;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    margin-top: 15vh;
+    flex-wrap: wrap;
+}
+.socials img {
+    height: 10vh;
 }
